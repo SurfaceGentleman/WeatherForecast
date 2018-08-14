@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0AD9B521226E9D003F1CF9 /* NextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AD9B421226E9D003F1CF9 /* NextTableViewCell.m */; };
+		8E0AD9D721227C0D003F1CF9 /* 大雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9B821227C0B003F1CF9 /* 大雨.png */; };
+		8E0AD9D821227C0D003F1CF9 /* 龙卷风.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9B921227C0B003F1CF9 /* 龙卷风.png */; };
+		8E0AD9D921227C0D003F1CF9 /* 大雪.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9BA21227C0B003F1CF9 /* 大雪.png */; };
+		8E0AD9DA21227C0D003F1CF9 /* 阴.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9BB21227C0B003F1CF9 /* 阴.png */; };
+		8E0AD9DB21227C0D003F1CF9 /* 小雪.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9BC21227C0B003F1CF9 /* 小雪.png */; };
+		8E0AD9DC21227C0D003F1CF9 /* 雷阵雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9BD21227C0B003F1CF9 /* 雷阵雨.png */; };
+		8E0AD9DD21227C0D003F1CF9 /* 冰雹.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9BE21227C0B003F1CF9 /* 冰雹.png */; };
+		8E0AD9DE21227C0D003F1CF9 /* 中雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9BF21227C0B003F1CF9 /* 中雨.png */; };
+		8E0AD9DF21227C0D003F1CF9 /* 阵雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C021227C0B003F1CF9 /* 阵雨.png */; };
+		8E0AD9E021227C0D003F1CF9 /* 底部View.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C121227C0B003F1CF9 /* 底部View.png */; };
+		8E0AD9E121227C0D003F1CF9 /* 云.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C221227C0B003F1CF9 /* 云.png */; };
+		8E0AD9E221227C0D003F1CF9 /* 飓风.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C321227C0B003F1CF9 /* 飓风.png */; };
+		8E0AD9E321227C0D003F1CF9 /* 雨夹雪.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C421227C0B003F1CF9 /* 雨夹雪.png */; };
+		8E0AD9E421227C0D003F1CF9 /* 大暴雪.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C521227C0C003F1CF9 /* 大暴雪.png */; };
+		8E0AD9E521227C0D003F1CF9 /* 雪.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C621227C0C003F1CF9 /* 雪.png */; };
+		8E0AD9E621227C0D003F1CF9 /* 暴雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C721227C0C003F1CF9 /* 暴雨.png */; };
+		8E0AD9E721227C0D003F1CF9 /* 浮沉.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C821227C0C003F1CF9 /* 浮沉.png */; };
+		8E0AD9E821227C0D003F1CF9 /* 大风.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9C921227C0C003F1CF9 /* 大风.png */; };
+		8E0AD9E921227C0D003F1CF9 /* 风.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9CA21227C0C003F1CF9 /* 风.png */; };
+		8E0AD9EA21227C0D003F1CF9 /* 沙尘.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9CB21227C0C003F1CF9 /* 沙尘.png */; };
+		8E0AD9EB21227C0D003F1CF9 /* 小雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9CC21227C0C003F1CF9 /* 小雨.png */; };
+		8E0AD9EC21227C0D003F1CF9 /* 雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9CD21227C0C003F1CF9 /* 雨.png */; };
+		8E0AD9ED21227C0D003F1CF9 /* 雾霾.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9CE21227C0C003F1CF9 /* 雾霾.png */; };
+		8E0AD9EE21227C0D003F1CF9 /* 按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9CF21227C0C003F1CF9 /* 按钮.png */; };
+		8E0AD9EF21227C0D003F1CF9 /* 多云.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D021227C0C003F1CF9 /* 多云.png */; };
+		8E0AD9F021227C0D003F1CF9 /* 中雪.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D121227C0C003F1CF9 /* 中雪.png */; };
+		8E0AD9F121227C0D003F1CF9 /* 雾.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D221227C0C003F1CF9 /* 雾.png */; };
+		8E0AD9F221227C0D003F1CF9 /* 雨加冰雹.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D321227C0C003F1CF9 /* 雨加冰雹.png */; };
+		8E0AD9F321227C0D003F1CF9 /* 晴.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D421227C0C003F1CF9 /* 晴.png */; };
+		8E0AD9F421227C0D003F1CF9 /* 特大暴雨.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D521227C0C003F1CF9 /* 特大暴雨.png */; };
+		8E0AD9F521227C0D003F1CF9 /* 未知.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9D621227C0C003F1CF9 /* 未知.png */; };
+		8E0AD9F82122B06B003F1CF9 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AD9F72122B06B003F1CF9 /* DetailTableViewCell.m */; };
+		8E0AD9FB2122C7AF003F1CF9 /* ScrollerVIewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AD9FA2122C7AF003F1CF9 /* ScrollerVIewTableViewCell.m */; };
+		8E0AD9FD2122CC97003F1CF9 /* 3fe28f8bd934629a8f7f968727261aed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E0AD9FC2122CC97003F1CF9 /* 3fe28f8bd934629a8f7f968727261aed.jpg */; };
+		8E30023E21218382004C8941 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E30023D21218382004C8941 /* AppDelegate.m */; };
+		8E30024121218382004C8941 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E30024021218382004C8941 /* ViewController.m */; };
+		8E30024421218382004C8941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E30024221218382004C8941 /* Main.storyboard */; };
+		8E3002462121838B004C8941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3002452121838B004C8941 /* Assets.xcassets */; };
+		8E3002492121838B004C8941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3002472121838B004C8941 /* LaunchScreen.storyboard */; };
+		8E30024C2121838B004C8941 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E30024B2121838B004C8941 /* main.m */; };
+		8E3002562121838B004C8941 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3002552121838B004C8941 /* ____Tests.m */; };
+		8E3002612121838B004C8941 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3002602121838B004C8941 /* ____UITests.m */; };
+		8E30026F212184C7004C8941 /* f83b3a393f0399c61f6736dfb61c9e27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E30026E212184C6004C8941 /* f83b3a393f0399c61f6736dfb61c9e27.jpg */; };
+		8E3002722121A1A8004C8941 /* WeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3002712121A1A8004C8941 /* WeatherTableViewCell.m */; };
+		8EA9A0EF2122F8C700B14695 /* 901.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0A52122F8BB00B14695 /* 901.png */; };
+		8EA9A0F02122F8C700B14695 /* 301n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0A62122F8BB00B14695 /* 301n.png */; };
+		8EA9A0F12122F8C700B14695 /* 401.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0A72122F8BB00B14695 /* 401.png */; };
+		8EA9A0F22122F8C700B14695 /* 100n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0A82122F8BC00B14695 /* 100n.png */; };
+		8EA9A0F32122F8C700B14695 /* 209.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0A92122F8BC00B14695 /* 209.png */; };
+		8EA9A0F42122F8C700B14695 /* 400.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0AA2122F8BC00B14695 /* 400.png */; };
+		8EA9A0F52122F8C700B14695 /* 511.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0AB2122F8BC00B14695 /* 511.png */; };
+		8EA9A0F62122F8C700B14695 /* 314.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0AC2122F8BC00B14695 /* 314.png */; };
+		8EA9A0F72122F8C700B14695 /* 504.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0AD2122F8BC00B14695 /* 504.png */; };
+		8EA9A0F82122F8C700B14695 /* 211.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0AE2122F8BC00B14695 /* 211.png */; };
+		8EA9A0F92122F8C700B14695 /* 410.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0AF2122F8BD00B14695 /* 410.png */; };
+		8EA9A0FA2122F8C700B14695 /* 900.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B02122F8BD00B14695 /* 900.png */; };
+		8EA9A0FB2122F8C700B14695 /* 316.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B12122F8BD00B14695 /* 316.png */; };
+		8EA9A0FC2122F8C700B14695 /* 315.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B22122F8BD00B14695 /* 315.png */; };
+		8EA9A0FD2122F8C700B14695 /* 513.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B32122F8BD00B14695 /* 513.png */; };
+		8EA9A0FE2122F8C700B14695 /* 206.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B42122F8BD00B14695 /* 206.png */; };
+		8EA9A0FF2122F8C700B14695 /* 213.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B52122F8BD00B14695 /* 213.png */; };
+		8EA9A1002122F8C700B14695 /* 303.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B62122F8BE00B14695 /* 303.png */; };
+		8EA9A1012122F8C700B14695 /* 402.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B72122F8BE00B14695 /* 402.png */; };
+		8EA9A1022122F8C700B14695 /* 307.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B82122F8BE00B14695 /* 307.png */; };
+		8EA9A1032122F8C700B14695 /* 201.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0B92122F8BE00B14695 /* 201.png */; };
+		8EA9A1042122F8C700B14695 /* 408.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0BA2122F8BE00B14695 /* 408.png */; };
+		8EA9A1052122F8C700B14695 /* 409.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0BB2122F8BE00B14695 /* 409.png */; };
+		8EA9A1062122F8C700B14695 /* 515.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0BC2122F8BE00B14695 /* 515.png */; };
+		8EA9A1072122F8C700B14695 /* 406n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0BD2122F8BF00B14695 /* 406n.png */; };
+		8EA9A1082122F8C700B14695 /* 301.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0BE2122F8BF00B14695 /* 301.png */; };
+		8EA9A1092122F8C700B14695 /* 509.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0BF2122F8BF00B14695 /* 509.png */; };
+		8EA9A10A2122F8C700B14695 /* 103n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C02122F8BF00B14695 /* 103n.png */; };
+		8EA9A10B2122F8C700B14695 /* 508.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C12122F8BF00B14695 /* 508.png */; };
+		8EA9A10C2122F8C700B14695 /* 304.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C22122F8BF00B14695 /* 304.png */; };
+		8EA9A10D2122F8C700B14695 /* 310.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C32122F8BF00B14695 /* 310.png */; };
+		8EA9A10E2122F8C700B14695 /* 208.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C42122F8C000B14695 /* 208.png */; };
+		8EA9A10F2122F8C700B14695 /* 407n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C52122F8C000B14695 /* 407n.png */; };
+		8EA9A1102122F8C700B14695 /* 317.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C62122F8C000B14695 /* 317.png */; };
+		8EA9A1112122F8C700B14695 /* 104n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C72122F8C000B14695 /* 104n.png */; };
+		8EA9A1122122F8C700B14695 /* 204.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C82122F8C000B14695 /* 204.png */; };
+		8EA9A1132122F8C700B14695 /* 207.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0C92122F8C000B14695 /* 207.png */; };
+		8EA9A1142122F8C700B14695 /* 212.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0CA2122F8C000B14695 /* 212.png */; };
+		8EA9A1152122F8C700B14695 /* 313.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0CB2122F8C100B14695 /* 313.png */; };
+		8EA9A1162122F8C700B14695 /* 405.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0CC2122F8C100B14695 /* 405.png */; };
+		8EA9A1172122F8C700B14695 /* 403.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0CD2122F8C100B14695 /* 403.png */; };
+		8EA9A1182122F8C700B14695 /* 312.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0CE2122F8C100B14695 /* 312.png */; };
+		8EA9A1192122F8C700B14695 /* 309.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0CF2122F8C100B14695 /* 309.png */; };
+		8EA9A11A2122F8C700B14695 /* 104.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D02122F8C100B14695 /* 104.png */; };
+		8EA9A11B2122F8C700B14695 /* 300n.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D12122F8C100B14695 /* 300n.png */; };
+		8EA9A11C2122F8C700B14695 /* 503.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D22122F8C200B14695 /* 503.png */; };
+		8EA9A11D2122F8C700B14695 /* 999.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D32122F8C200B14695 /* 999.png */; };
+		8EA9A11E2122F8C700B14695 /* 404.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D42122F8C200B14695 /* 404.png */; };
+		8EA9A11F2122F8C700B14695 /* 318.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D52122F8C200B14695 /* 318.png */; };
+		8EA9A1202122F8C700B14695 /* 305.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D62122F8C200B14695 /* 305.png */; };
+		8EA9A1212122F8C700B14695 /* 407.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D72122F8C200B14695 /* 407.png */; };
+		8EA9A1222122F8C700B14695 /* 300.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D82122F8C300B14695 /* 300.png */; };
+		8EA9A1232122F8C700B14695 /* 200.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0D92122F8C300B14695 /* 200.png */; };
+		8EA9A1242122F8C700B14695 /* 205.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0DA2122F8C300B14695 /* 205.png */; };
+		8EA9A1252122F8C700B14695 /* 502.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0DB2122F8C300B14695 /* 502.png */; };
+		8EA9A1262122F8C700B14695 /* 103.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0DC2122F8C300B14695 /* 103.png */; };
+		8EA9A1272122F8C700B14695 /* 210.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0DD2122F8C300B14695 /* 210.png */; };
+		8EA9A1282122F8C700B14695 /* 306.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0DE2122F8C400B14695 /* 306.png */; };
+		8EA9A1292122F8C700B14695 /* 311.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0DF2122F8C400B14695 /* 311.png */; };
+		8EA9A12A2122F8C700B14695 /* 399.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E02122F8C400B14695 /* 399.png */; };
+		8EA9A12B2122F8C700B14695 /* 406.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E12122F8C400B14695 /* 406.png */; };
+		8EA9A12C2122F8C700B14695 /* 100.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E22122F8C400B14695 /* 100.png */; };
+		8EA9A12D2122F8C700B14695 /* 499.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E32122F8C500B14695 /* 499.png */; };
+		8EA9A12E2122F8C700B14695 /* 302.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E42122F8C500B14695 /* 302.png */; };
+		8EA9A12F2122F8C700B14695 /* 203.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E52122F8C500B14695 /* 203.png */; };
+		8EA9A1302122F8C700B14695 /* 102.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E62122F8C500B14695 /* 102.png */; };
+		8EA9A1312122F8C700B14695 /* 507.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E72122F8C600B14695 /* 507.png */; };
+		8EA9A1322122F8C700B14695 /* 512.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E82122F8C600B14695 /* 512.png */; };
+		8EA9A1332122F8C700B14695 /* 501.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0E92122F8C600B14695 /* 501.png */; };
+		8EA9A1342122F8C700B14695 /* 514.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0EA2122F8C600B14695 /* 514.png */; };
+		8EA9A1352122F8C700B14695 /* 510.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0EB2122F8C600B14695 /* 510.png */; };
+		8EA9A1362122F8C700B14695 /* 202.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0EC2122F8C700B14695 /* 202.png */; };
+		8EA9A1372122F8C700B14695 /* 101.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0ED2122F8C700B14695 /* 101.png */; };
+		8EA9A1382122F8C700B14695 /* 500.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A0EE2122F8C700B14695 /* 500.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E3002522121838B004C8941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E30023121218382004C8941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E30023821218382004C8941;
+			remoteInfo = "天气预报";
+		};
+		8E30025D2121838B004C8941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E30023121218382004C8941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E30023821218382004C8941;
+			remoteInfo = "天气预报";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E0AD9B321226E9D003F1CF9 /* NextTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextTableViewCell.h; sourceTree = "<group>"; };
+		8E0AD9B421226E9D003F1CF9 /* NextTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextTableViewCell.m; sourceTree = "<group>"; };
+		8E0AD9B821227C0B003F1CF9 /* 大雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大雨.png"; sourceTree = "<group>"; };
+		8E0AD9B921227C0B003F1CF9 /* 龙卷风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "龙卷风.png"; sourceTree = "<group>"; };
+		8E0AD9BA21227C0B003F1CF9 /* 大雪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大雪.png"; sourceTree = "<group>"; };
+		8E0AD9BB21227C0B003F1CF9 /* 阴.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "阴.png"; sourceTree = "<group>"; };
+		8E0AD9BC21227C0B003F1CF9 /* 小雪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小雪.png"; sourceTree = "<group>"; };
+		8E0AD9BD21227C0B003F1CF9 /* 雷阵雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雷阵雨.png"; sourceTree = "<group>"; };
+		8E0AD9BE21227C0B003F1CF9 /* 冰雹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "冰雹.png"; sourceTree = "<group>"; };
+		8E0AD9BF21227C0B003F1CF9 /* 中雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中雨.png"; sourceTree = "<group>"; };
+		8E0AD9C021227C0B003F1CF9 /* 阵雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "阵雨.png"; sourceTree = "<group>"; };
+		8E0AD9C121227C0B003F1CF9 /* 底部View.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "底部View.png"; sourceTree = "<group>"; };
+		8E0AD9C221227C0B003F1CF9 /* 云.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "云.png"; sourceTree = "<group>"; };
+		8E0AD9C321227C0B003F1CF9 /* 飓风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飓风.png"; sourceTree = "<group>"; };
+		8E0AD9C421227C0B003F1CF9 /* 雨夹雪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨夹雪.png"; sourceTree = "<group>"; };
+		8E0AD9C521227C0C003F1CF9 /* 大暴雪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大暴雪.png"; sourceTree = "<group>"; };
+		8E0AD9C621227C0C003F1CF9 /* 雪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雪.png"; sourceTree = "<group>"; };
+		8E0AD9C721227C0C003F1CF9 /* 暴雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "暴雨.png"; sourceTree = "<group>"; };
+		8E0AD9C821227C0C003F1CF9 /* 浮沉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "浮沉.png"; sourceTree = "<group>"; };
+		8E0AD9C921227C0C003F1CF9 /* 大风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大风.png"; sourceTree = "<group>"; };
+		8E0AD9CA21227C0C003F1CF9 /* 风.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "风.png"; sourceTree = "<group>"; };
+		8E0AD9CB21227C0C003F1CF9 /* 沙尘.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "沙尘.png"; sourceTree = "<group>"; };
+		8E0AD9CC21227C0C003F1CF9 /* 小雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "小雨.png"; sourceTree = "<group>"; };
+		8E0AD9CD21227C0C003F1CF9 /* 雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨.png"; sourceTree = "<group>"; };
+		8E0AD9CE21227C0C003F1CF9 /* 雾霾.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雾霾.png"; sourceTree = "<group>"; };
+		8E0AD9CF21227C0C003F1CF9 /* 按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "按钮.png"; sourceTree = "<group>"; };
+		8E0AD9D021227C0C003F1CF9 /* 多云.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多云.png"; sourceTree = "<group>"; };
+		8E0AD9D121227C0C003F1CF9 /* 中雪.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中雪.png"; sourceTree = "<group>"; };
+		8E0AD9D221227C0C003F1CF9 /* 雾.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雾.png"; sourceTree = "<group>"; };
+		8E0AD9D321227C0C003F1CF9 /* 雨加冰雹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雨加冰雹.png"; sourceTree = "<group>"; };
+		8E0AD9D421227C0C003F1CF9 /* 晴.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴.png"; sourceTree = "<group>"; };
+		8E0AD9D521227C0C003F1CF9 /* 特大暴雨.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "特大暴雨.png"; sourceTree = "<group>"; };
+		8E0AD9D621227C0C003F1CF9 /* 未知.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未知.png"; sourceTree = "<group>"; };
+		8E0AD9F62122B06B003F1CF9 /* DetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		8E0AD9F72122B06B003F1CF9 /* DetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		8E0AD9F92122C7AF003F1CF9 /* ScrollerVIewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerVIewTableViewCell.h; sourceTree = "<group>"; };
+		8E0AD9FA2122C7AF003F1CF9 /* ScrollerVIewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollerVIewTableViewCell.m; sourceTree = "<group>"; };
+		8E0AD9FC2122CC97003F1CF9 /* 3fe28f8bd934629a8f7f968727261aed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3fe28f8bd934629a8f7f968727261aed.jpg; sourceTree = "<group>"; };
+		8E30023921218382004C8941 /* 天气预报.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "天气预报.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E30023C21218382004C8941 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E30023D21218382004C8941 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E30023F21218382004C8941 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E30024021218382004C8941 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E30024321218382004C8941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E3002452121838B004C8941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E3002482121838B004C8941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E30024A2121838B004C8941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E30024B2121838B004C8941 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E3002512121838B004C8941 /* 天气预报Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "天气预报Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3002552121838B004C8941 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		8E3002572121838B004C8941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E30025C2121838B004C8941 /* 天气预报UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "天气预报UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3002602121838B004C8941 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
+		8E3002622121838B004C8941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E30026E212184C6004C8941 /* f83b3a393f0399c61f6736dfb61c9e27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = f83b3a393f0399c61f6736dfb61c9e27.jpg; sourceTree = "<group>"; };
+		8E3002702121A1A8004C8941 /* WeatherTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherTableViewCell.h; sourceTree = "<group>"; };
+		8E3002712121A1A8004C8941 /* WeatherTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTableViewCell.m; sourceTree = "<group>"; };
+		8EA9A0A52122F8BB00B14695 /* 901.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 901.png; sourceTree = "<group>"; };
+		8EA9A0A62122F8BB00B14695 /* 301n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 301n.png; sourceTree = "<group>"; };
+		8EA9A0A72122F8BB00B14695 /* 401.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 401.png; sourceTree = "<group>"; };
+		8EA9A0A82122F8BC00B14695 /* 100n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100n.png; sourceTree = "<group>"; };
+		8EA9A0A92122F8BC00B14695 /* 209.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 209.png; sourceTree = "<group>"; };
+		8EA9A0AA2122F8BC00B14695 /* 400.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 400.png; sourceTree = "<group>"; };
+		8EA9A0AB2122F8BC00B14695 /* 511.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 511.png; sourceTree = "<group>"; };
+		8EA9A0AC2122F8BC00B14695 /* 314.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 314.png; sourceTree = "<group>"; };
+		8EA9A0AD2122F8BC00B14695 /* 504.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 504.png; sourceTree = "<group>"; };
+		8EA9A0AE2122F8BC00B14695 /* 211.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 211.png; sourceTree = "<group>"; };
+		8EA9A0AF2122F8BD00B14695 /* 410.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 410.png; sourceTree = "<group>"; };
+		8EA9A0B02122F8BD00B14695 /* 900.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 900.png; sourceTree = "<group>"; };
+		8EA9A0B12122F8BD00B14695 /* 316.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 316.png; sourceTree = "<group>"; };
+		8EA9A0B22122F8BD00B14695 /* 315.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 315.png; sourceTree = "<group>"; };
+		8EA9A0B32122F8BD00B14695 /* 513.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 513.png; sourceTree = "<group>"; };
+		8EA9A0B42122F8BD00B14695 /* 206.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 206.png; sourceTree = "<group>"; };
+		8EA9A0B52122F8BD00B14695 /* 213.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 213.png; sourceTree = "<group>"; };
+		8EA9A0B62122F8BE00B14695 /* 303.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 303.png; sourceTree = "<group>"; };
+		8EA9A0B72122F8BE00B14695 /* 402.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 402.png; sourceTree = "<group>"; };
+		8EA9A0B82122F8BE00B14695 /* 307.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 307.png; sourceTree = "<group>"; };
+		8EA9A0B92122F8BE00B14695 /* 201.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 201.png; sourceTree = "<group>"; };
+		8EA9A0BA2122F8BE00B14695 /* 408.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 408.png; sourceTree = "<group>"; };
+		8EA9A0BB2122F8BE00B14695 /* 409.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 409.png; sourceTree = "<group>"; };
+		8EA9A0BC2122F8BE00B14695 /* 515.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 515.png; sourceTree = "<group>"; };
+		8EA9A0BD2122F8BF00B14695 /* 406n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 406n.png; sourceTree = "<group>"; };
+		8EA9A0BE2122F8BF00B14695 /* 301.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 301.png; sourceTree = "<group>"; };
+		8EA9A0BF2122F8BF00B14695 /* 509.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 509.png; sourceTree = "<group>"; };
+		8EA9A0C02122F8BF00B14695 /* 103n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 103n.png; sourceTree = "<group>"; };
+		8EA9A0C12122F8BF00B14695 /* 508.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 508.png; sourceTree = "<group>"; };
+		8EA9A0C22122F8BF00B14695 /* 304.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 304.png; sourceTree = "<group>"; };
+		8EA9A0C32122F8BF00B14695 /* 310.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 310.png; sourceTree = "<group>"; };
+		8EA9A0C42122F8C000B14695 /* 208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 208.png; sourceTree = "<group>"; };
+		8EA9A0C52122F8C000B14695 /* 407n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 407n.png; sourceTree = "<group>"; };
+		8EA9A0C62122F8C000B14695 /* 317.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 317.png; sourceTree = "<group>"; };
+		8EA9A0C72122F8C000B14695 /* 104n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 104n.png; sourceTree = "<group>"; };
+		8EA9A0C82122F8C000B14695 /* 204.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 204.png; sourceTree = "<group>"; };
+		8EA9A0C92122F8C000B14695 /* 207.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 207.png; sourceTree = "<group>"; };
+		8EA9A0CA2122F8C000B14695 /* 212.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 212.png; sourceTree = "<group>"; };
+		8EA9A0CB2122F8C100B14695 /* 313.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 313.png; sourceTree = "<group>"; };
+		8EA9A0CC2122F8C100B14695 /* 405.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 405.png; sourceTree = "<group>"; };
+		8EA9A0CD2122F8C100B14695 /* 403.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 403.png; sourceTree = "<group>"; };
+		8EA9A0CE2122F8C100B14695 /* 312.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 312.png; sourceTree = "<group>"; };
+		8EA9A0CF2122F8C100B14695 /* 309.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 309.png; sourceTree = "<group>"; };
+		8EA9A0D02122F8C100B14695 /* 104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 104.png; sourceTree = "<group>"; };
+		8EA9A0D12122F8C100B14695 /* 300n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 300n.png; sourceTree = "<group>"; };
+		8EA9A0D22122F8C200B14695 /* 503.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 503.png; sourceTree = "<group>"; };
+		8EA9A0D32122F8C200B14695 /* 999.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 999.png; sourceTree = "<group>"; };
+		8EA9A0D42122F8C200B14695 /* 404.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 404.png; sourceTree = "<group>"; };
+		8EA9A0D52122F8C200B14695 /* 318.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 318.png; sourceTree = "<group>"; };
+		8EA9A0D62122F8C200B14695 /* 305.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 305.png; sourceTree = "<group>"; };
+		8EA9A0D72122F8C200B14695 /* 407.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 407.png; sourceTree = "<group>"; };
+		8EA9A0D82122F8C300B14695 /* 300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 300.png; sourceTree = "<group>"; };
+		8EA9A0D92122F8C300B14695 /* 200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 200.png; sourceTree = "<group>"; };
+		8EA9A0DA2122F8C300B14695 /* 205.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 205.png; sourceTree = "<group>"; };
+		8EA9A0DB2122F8C300B14695 /* 502.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 502.png; sourceTree = "<group>"; };
+		8EA9A0DC2122F8C300B14695 /* 103.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 103.png; sourceTree = "<group>"; };
+		8EA9A0DD2122F8C300B14695 /* 210.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 210.png; sourceTree = "<group>"; };
+		8EA9A0DE2122F8C400B14695 /* 306.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 306.png; sourceTree = "<group>"; };
+		8EA9A0DF2122F8C400B14695 /* 311.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 311.png; sourceTree = "<group>"; };
+		8EA9A0E02122F8C400B14695 /* 399.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 399.png; sourceTree = "<group>"; };
+		8EA9A0E12122F8C400B14695 /* 406.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 406.png; sourceTree = "<group>"; };
+		8EA9A0E22122F8C400B14695 /* 100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100.png; sourceTree = "<group>"; };
+		8EA9A0E32122F8C500B14695 /* 499.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 499.png; sourceTree = "<group>"; };
+		8EA9A0E42122F8C500B14695 /* 302.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 302.png; sourceTree = "<group>"; };
+		8EA9A0E52122F8C500B14695 /* 203.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 203.png; sourceTree = "<group>"; };
+		8EA9A0E62122F8C500B14695 /* 102.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 102.png; sourceTree = "<group>"; };
+		8EA9A0E72122F8C600B14695 /* 507.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 507.png; sourceTree = "<group>"; };
+		8EA9A0E82122F8C600B14695 /* 512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512.png; sourceTree = "<group>"; };
+		8EA9A0E92122F8C600B14695 /* 501.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 501.png; sourceTree = "<group>"; };
+		8EA9A0EA2122F8C600B14695 /* 514.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 514.png; sourceTree = "<group>"; };
+		8EA9A0EB2122F8C600B14695 /* 510.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 510.png; sourceTree = "<group>"; };
+		8EA9A0EC2122F8C700B14695 /* 202.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 202.png; sourceTree = "<group>"; };
+		8EA9A0ED2122F8C700B14695 /* 101.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 101.png; sourceTree = "<group>"; };
+		8EA9A0EE2122F8C700B14695 /* 500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 500.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E30023621218382004C8941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E30024E2121838B004C8941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3002592121838B004C8941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E0AD9B621227BBE003F1CF9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E3002702121A1A8004C8941 /* WeatherTableViewCell.h */,
+				8E3002712121A1A8004C8941 /* WeatherTableViewCell.m */,
+				8E0AD9B321226E9D003F1CF9 /* NextTableViewCell.h */,
+				8E0AD9B421226E9D003F1CF9 /* NextTableViewCell.m */,
+				8E0AD9F62122B06B003F1CF9 /* DetailTableViewCell.h */,
+				8E0AD9F72122B06B003F1CF9 /* DetailTableViewCell.m */,
+				8E0AD9F92122C7AF003F1CF9 /* ScrollerVIewTableViewCell.h */,
+				8E0AD9FA2122C7AF003F1CF9 /* ScrollerVIewTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E0AD9B721227BDF003F1CF9 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				8EA9A0E22122F8C400B14695 /* 100.png */,
+				8EA9A0A82122F8BC00B14695 /* 100n.png */,
+				8EA9A0ED2122F8C700B14695 /* 101.png */,
+				8EA9A0E62122F8C500B14695 /* 102.png */,
+				8EA9A0DC2122F8C300B14695 /* 103.png */,
+				8EA9A0C02122F8BF00B14695 /* 103n.png */,
+				8EA9A0D02122F8C100B14695 /* 104.png */,
+				8EA9A0C72122F8C000B14695 /* 104n.png */,
+				8EA9A0D92122F8C300B14695 /* 200.png */,
+				8EA9A0B92122F8BE00B14695 /* 201.png */,
+				8EA9A0EC2122F8C700B14695 /* 202.png */,
+				8EA9A0E52122F8C500B14695 /* 203.png */,
+				8EA9A0C82122F8C000B14695 /* 204.png */,
+				8EA9A0DA2122F8C300B14695 /* 205.png */,
+				8EA9A0B42122F8BD00B14695 /* 206.png */,
+				8EA9A0C92122F8C000B14695 /* 207.png */,
+				8EA9A0C42122F8C000B14695 /* 208.png */,
+				8EA9A0A92122F8BC00B14695 /* 209.png */,
+				8EA9A0DD2122F8C300B14695 /* 210.png */,
+				8EA9A0AE2122F8BC00B14695 /* 211.png */,
+				8EA9A0CA2122F8C000B14695 /* 212.png */,
+				8EA9A0B52122F8BD00B14695 /* 213.png */,
+				8EA9A0D82122F8C300B14695 /* 300.png */,
+				8EA9A0D12122F8C100B14695 /* 300n.png */,
+				8EA9A0BE2122F8BF00B14695 /* 301.png */,
+				8EA9A0A62122F8BB00B14695 /* 301n.png */,
+				8EA9A0E42122F8C500B14695 /* 302.png */,
+				8EA9A0B62122F8BE00B14695 /* 303.png */,
+				8EA9A0C22122F8BF00B14695 /* 304.png */,
+				8EA9A0D62122F8C200B14695 /* 305.png */,
+				8EA9A0DE2122F8C400B14695 /* 306.png */,
+				8EA9A0B82122F8BE00B14695 /* 307.png */,
+				8EA9A0CF2122F8C100B14695 /* 309.png */,
+				8EA9A0C32122F8BF00B14695 /* 310.png */,
+				8EA9A0DF2122F8C400B14695 /* 311.png */,
+				8EA9A0CE2122F8C100B14695 /* 312.png */,
+				8EA9A0CB2122F8C100B14695 /* 313.png */,
+				8EA9A0AC2122F8BC00B14695 /* 314.png */,
+				8EA9A0B22122F8BD00B14695 /* 315.png */,
+				8EA9A0B12122F8BD00B14695 /* 316.png */,
+				8EA9A0C62122F8C000B14695 /* 317.png */,
+				8EA9A0D52122F8C200B14695 /* 318.png */,
+				8EA9A0E02122F8C400B14695 /* 399.png */,
+				8EA9A0AA2122F8BC00B14695 /* 400.png */,
+				8EA9A0A72122F8BB00B14695 /* 401.png */,
+				8EA9A0B72122F8BE00B14695 /* 402.png */,
+				8EA9A0CD2122F8C100B14695 /* 403.png */,
+				8EA9A0D42122F8C200B14695 /* 404.png */,
+				8EA9A0CC2122F8C100B14695 /* 405.png */,
+				8EA9A0E12122F8C400B14695 /* 406.png */,
+				8EA9A0BD2122F8BF00B14695 /* 406n.png */,
+				8EA9A0D72122F8C200B14695 /* 407.png */,
+				8EA9A0C52122F8C000B14695 /* 407n.png */,
+				8EA9A0BA2122F8BE00B14695 /* 408.png */,
+				8EA9A0BB2122F8BE00B14695 /* 409.png */,
+				8EA9A0AF2122F8BD00B14695 /* 410.png */,
+				8EA9A0E32122F8C500B14695 /* 499.png */,
+				8EA9A0EE2122F8C700B14695 /* 500.png */,
+				8EA9A0E92122F8C600B14695 /* 501.png */,
+				8EA9A0DB2122F8C300B14695 /* 502.png */,
+				8EA9A0D22122F8C200B14695 /* 503.png */,
+				8EA9A0AD2122F8BC00B14695 /* 504.png */,
+				8EA9A0E72122F8C600B14695 /* 507.png */,
+				8EA9A0C12122F8BF00B14695 /* 508.png */,
+				8EA9A0BF2122F8BF00B14695 /* 509.png */,
+				8EA9A0EB2122F8C600B14695 /* 510.png */,
+				8EA9A0AB2122F8BC00B14695 /* 511.png */,
+				8EA9A0E82122F8C600B14695 /* 512.png */,
+				8EA9A0B32122F8BD00B14695 /* 513.png */,
+				8EA9A0EA2122F8C600B14695 /* 514.png */,
+				8EA9A0BC2122F8BE00B14695 /* 515.png */,
+				8EA9A0B02122F8BD00B14695 /* 900.png */,
+				8EA9A0A52122F8BB00B14695 /* 901.png */,
+				8EA9A0D32122F8C200B14695 /* 999.png */,
+				8E0AD9CF21227C0C003F1CF9 /* 按钮.png */,
+				8E0AD9C721227C0C003F1CF9 /* 暴雨.png */,
+				8E0AD9BE21227C0B003F1CF9 /* 冰雹.png */,
+				8E0AD9C521227C0C003F1CF9 /* 大暴雪.png */,
+				8E0AD9C921227C0C003F1CF9 /* 大风.png */,
+				8E0AD9BA21227C0B003F1CF9 /* 大雪.png */,
+				8E0AD9B821227C0B003F1CF9 /* 大雨.png */,
+				8E0AD9C121227C0B003F1CF9 /* 底部View.png */,
+				8E0AD9D021227C0C003F1CF9 /* 多云.png */,
+				8E0AD9CA21227C0C003F1CF9 /* 风.png */,
+				8E0AD9C821227C0C003F1CF9 /* 浮沉.png */,
+				8E0AD9C321227C0B003F1CF9 /* 飓风.png */,
+				8E0AD9BD21227C0B003F1CF9 /* 雷阵雨.png */,
+				8E0AD9B921227C0B003F1CF9 /* 龙卷风.png */,
+				8E0AD9D421227C0C003F1CF9 /* 晴.png */,
+				8E0AD9CB21227C0C003F1CF9 /* 沙尘.png */,
+				8E0AD9D521227C0C003F1CF9 /* 特大暴雨.png */,
+				8E0AD9D621227C0C003F1CF9 /* 未知.png */,
+				8E0AD9D221227C0C003F1CF9 /* 雾.png */,
+				8E0AD9CE21227C0C003F1CF9 /* 雾霾.png */,
+				8E0AD9BC21227C0B003F1CF9 /* 小雪.png */,
+				8E0AD9CC21227C0C003F1CF9 /* 小雨.png */,
+				8E0AD9C621227C0C003F1CF9 /* 雪.png */,
+				8E0AD9BB21227C0B003F1CF9 /* 阴.png */,
+				8E0AD9CD21227C0C003F1CF9 /* 雨.png */,
+				8E0AD9D321227C0C003F1CF9 /* 雨加冰雹.png */,
+				8E0AD9C421227C0B003F1CF9 /* 雨夹雪.png */,
+				8E0AD9C221227C0B003F1CF9 /* 云.png */,
+				8E0AD9C021227C0B003F1CF9 /* 阵雨.png */,
+				8E0AD9D121227C0C003F1CF9 /* 中雪.png */,
+				8E0AD9BF21227C0B003F1CF9 /* 中雨.png */,
+				8E0AD9FC2122CC97003F1CF9 /* 3fe28f8bd934629a8f7f968727261aed.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		8E30023021218382004C8941 = {
+			isa = PBXGroup;
+			children = (
+				8E30026E212184C6004C8941 /* f83b3a393f0399c61f6736dfb61c9e27.jpg */,
+				8E30023B21218382004C8941 /* 天气预报 */,
+				8E3002542121838B004C8941 /* 天气预报Tests */,
+				8E30025F2121838B004C8941 /* 天气预报UITests */,
+				8E30023A21218382004C8941 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E30023A21218382004C8941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E30023921218382004C8941 /* 天气预报.app */,
+				8E3002512121838B004C8941 /* 天气预报Tests.xctest */,
+				8E30025C2121838B004C8941 /* 天气预报UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E30023B21218382004C8941 /* 天气预报 */ = {
+			isa = PBXGroup;
+			children = (
+				8E0AD9B721227BDF003F1CF9 /* image */,
+				8E0AD9B621227BBE003F1CF9 /* Cell */,
+				8E30023C21218382004C8941 /* AppDelegate.h */,
+				8E30023D21218382004C8941 /* AppDelegate.m */,
+				8E30023F21218382004C8941 /* ViewController.h */,
+				8E30024021218382004C8941 /* ViewController.m */,
+				8E30024221218382004C8941 /* Main.storyboard */,
+				8E3002452121838B004C8941 /* Assets.xcassets */,
+				8E3002472121838B004C8941 /* LaunchScreen.storyboard */,
+				8E30024A2121838B004C8941 /* Info.plist */,
+				8E30024B2121838B004C8941 /* main.m */,
+			);
+			path = "天气预报";
+			sourceTree = "<group>";
+		};
+		8E3002542121838B004C8941 /* 天气预报Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8E3002552121838B004C8941 /* ____Tests.m */,
+				8E3002572121838B004C8941 /* Info.plist */,
+			);
+			path = "天气预报Tests";
+			sourceTree = "<group>";
+		};
+		8E30025F2121838B004C8941 /* 天气预报UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E3002602121838B004C8941 /* ____UITests.m */,
+				8E3002622121838B004C8941 /* Info.plist */,
+			);
+			path = "天气预报UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E30023821218382004C8941 /* 天气预报 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3002652121838B004C8941 /* Build configuration list for PBXNativeTarget "天气预报" */;
+			buildPhases = (
+				8E30023521218382004C8941 /* Sources */,
+				8E30023621218382004C8941 /* Frameworks */,
+				8E30023721218382004C8941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "天气预报";
+			productName = "天气预报";
+			productReference = 8E30023921218382004C8941 /* 天气预报.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E3002502121838B004C8941 /* 天气预报Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3002682121838B004C8941 /* Build configuration list for PBXNativeTarget "天气预报Tests" */;
+			buildPhases = (
+				8E30024D2121838B004C8941 /* Sources */,
+				8E30024E2121838B004C8941 /* Frameworks */,
+				8E30024F2121838B004C8941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E3002532121838B004C8941 /* PBXTargetDependency */,
+			);
+			name = "天气预报Tests";
+			productName = "天气预报Tests";
+			productReference = 8E3002512121838B004C8941 /* 天气预报Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E30025B2121838B004C8941 /* 天气预报UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E30026B2121838B004C8941 /* Build configuration list for PBXNativeTarget "天气预报UITests" */;
+			buildPhases = (
+				8E3002582121838B004C8941 /* Sources */,
+				8E3002592121838B004C8941 /* Frameworks */,
+				8E30025A2121838B004C8941 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E30025E2121838B004C8941 /* PBXTargetDependency */,
+			);
+			name = "天气预报UITests";
+			productName = "天气预报UITests";
+			productReference = 8E30025C2121838B004C8941 /* 天气预报UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E30023121218382004C8941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "开朗的男子";
+				TargetAttributes = {
+					8E30023821218382004C8941 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8E3002502121838B004C8941 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8E30023821218382004C8941;
+					};
+					8E30025B2121838B004C8941 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8E30023821218382004C8941;
+					};
+				};
+			};
+			buildConfigurationList = 8E30023421218382004C8941 /* Build configuration list for PBXProject "天气预报" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E30023021218382004C8941;
+			productRefGroup = 8E30023A21218382004C8941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E30023821218382004C8941 /* 天气预报 */,
+				8E3002502121838B004C8941 /* 天气预报Tests */,
+				8E30025B2121838B004C8941 /* 天气预报UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E30023721218382004C8941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA9A11F2122F8C700B14695 /* 318.png in Resources */,
+				8EA9A1342122F8C700B14695 /* 514.png in Resources */,
+				8EA9A1012122F8C700B14695 /* 402.png in Resources */,
+				8EA9A1002122F8C700B14695 /* 303.png in Resources */,
+				8EA9A1102122F8C700B14695 /* 317.png in Resources */,
+				8EA9A0F42122F8C700B14695 /* 400.png in Resources */,
+				8EA9A1242122F8C700B14695 /* 205.png in Resources */,
+				8EA9A0F02122F8C700B14695 /* 301n.png in Resources */,
+				8E0AD9F321227C0D003F1CF9 /* 晴.png in Resources */,
+				8EA9A0F72122F8C700B14695 /* 504.png in Resources */,
+				8EA9A1362122F8C700B14695 /* 202.png in Resources */,
+				8E0AD9DF21227C0D003F1CF9 /* 阵雨.png in Resources */,
+				8EA9A1302122F8C700B14695 /* 102.png in Resources */,
+				8E0AD9DB21227C0D003F1CF9 /* 小雪.png in Resources */,
+				8EA9A1172122F8C700B14695 /* 403.png in Resources */,
+				8E0AD9D821227C0D003F1CF9 /* 龙卷风.png in Resources */,
+				8EA9A1232122F8C700B14695 /* 200.png in Resources */,
+				8EA9A1032122F8C700B14695 /* 201.png in Resources */,
+				8EA9A1292122F8C700B14695 /* 311.png in Resources */,
+				8EA9A11A2122F8C700B14695 /* 104.png in Resources */,
+				8EA9A1372122F8C700B14695 /* 101.png in Resources */,
+				8E0AD9E421227C0D003F1CF9 /* 大暴雪.png in Resources */,
+				8EA9A12C2122F8C700B14695 /* 100.png in Resources */,
+				8E0AD9DD21227C0D003F1CF9 /* 冰雹.png in Resources */,
+				8E0AD9FD2122CC97003F1CF9 /* 3fe28f8bd934629a8f7f968727261aed.jpg in Resources */,
+				8EA9A1312122F8C700B14695 /* 507.png in Resources */,
+				8EA9A0FB2122F8C700B14695 /* 316.png in Resources */,
+				8EA9A0FA2122F8C700B14695 /* 900.png in Resources */,
+				8EA9A1052122F8C700B14695 /* 409.png in Resources */,
+				8EA9A0F22122F8C700B14695 /* 100n.png in Resources */,
+				8EA9A1072122F8C700B14695 /* 406n.png in Resources */,
+				8EA9A12A2122F8C700B14695 /* 399.png in Resources */,
+				8EA9A10E2122F8C700B14695 /* 208.png in Resources */,
+				8EA9A1042122F8C700B14695 /* 408.png in Resources */,
+				8E0AD9E621227C0D003F1CF9 /* 暴雨.png in Resources */,
+				8EA9A0EF2122F8C700B14695 /* 901.png in Resources */,
+				8EA9A10F2122F8C700B14695 /* 407n.png in Resources */,
+				8EA9A1122122F8C700B14695 /* 204.png in Resources */,
+				8EA9A1162122F8C700B14695 /* 405.png in Resources */,
+				8EA9A1212122F8C700B14695 /* 407.png in Resources */,
+				8E0AD9D721227C0D003F1CF9 /* 大雨.png in Resources */,
+				8EA9A1062122F8C700B14695 /* 515.png in Resources */,
+				8EA9A12E2122F8C700B14695 /* 302.png in Resources */,
+				8EA9A0F82122F8C700B14695 /* 211.png in Resources */,
+				8EA9A1092122F8C700B14695 /* 509.png in Resources */,
+				8EA9A12B2122F8C700B14695 /* 406.png in Resources */,
+				8EA9A0F92122F8C700B14695 /* 410.png in Resources */,
+				8EA9A11D2122F8C700B14695 /* 999.png in Resources */,
+				8EA9A0FF2122F8C700B14695 /* 213.png in Resources */,
+				8EA9A0F52122F8C700B14695 /* 511.png in Resources */,
+				8E0AD9E721227C0D003F1CF9 /* 浮沉.png in Resources */,
+				8E0AD9EC21227C0D003F1CF9 /* 雨.png in Resources */,
+				8E3002492121838B004C8941 /* LaunchScreen.storyboard in Resources */,
+				8EA9A0F32122F8C700B14695 /* 209.png in Resources */,
+				8EA9A10A2122F8C700B14695 /* 103n.png in Resources */,
+				8E0AD9E321227C0D003F1CF9 /* 雨夹雪.png in Resources */,
+				8EA9A12F2122F8C700B14695 /* 203.png in Resources */,
+				8E0AD9D921227C0D003F1CF9 /* 大雪.png in Resources */,
+				8E0AD9F221227C0D003F1CF9 /* 雨加冰雹.png in Resources */,
+				8EA9A1262122F8C700B14695 /* 103.png in Resources */,
+				8E0AD9DA21227C0D003F1CF9 /* 阴.png in Resources */,
+				8EA9A1152122F8C700B14695 /* 313.png in Resources */,
+				8EA9A0FE2122F8C700B14695 /* 206.png in Resources */,
+				8EA9A10D2122F8C700B14695 /* 310.png in Resources */,
+				8E0AD9E921227C0D003F1CF9 /* 风.png in Resources */,
+				8E0AD9E821227C0D003F1CF9 /* 大风.png in Resources */,
+				8EA9A1022122F8C700B14695 /* 307.png in Resources */,
+				8E0AD9EF21227C0D003F1CF9 /* 多云.png in Resources */,
+				8EA9A1282122F8C700B14695 /* 306.png in Resources */,
+				8E0AD9DC21227C0D003F1CF9 /* 雷阵雨.png in Resources */,
+				8EA9A1252122F8C700B14695 /* 502.png in Resources */,
+				8EA9A1222122F8C700B14695 /* 300.png in Resources */,
+				8EA9A1142122F8C700B14695 /* 212.png in Resources */,
+				8E0AD9F421227C0D003F1CF9 /* 特大暴雨.png in Resources */,
+				8EA9A1352122F8C700B14695 /* 510.png in Resources */,
+				8EA9A0F12122F8C700B14695 /* 401.png in Resources */,
+				8EA9A1272122F8C700B14695 /* 210.png in Resources */,
+				8EA9A1192122F8C700B14695 /* 309.png in Resources */,
+				8E0AD9E021227C0D003F1CF9 /* 底部View.png in Resources */,
+				8E0AD9E221227C0D003F1CF9 /* 飓风.png in Resources */,
+				8E3002462121838B004C8941 /* Assets.xcassets in Resources */,
+				8EA9A1132122F8C700B14695 /* 207.png in Resources */,
+				8E0AD9F021227C0D003F1CF9 /* 中雪.png in Resources */,
+				8EA9A1182122F8C700B14695 /* 312.png in Resources */,
+				8E0AD9EA21227C0D003F1CF9 /* 沙尘.png in Resources */,
+				8EA9A1112122F8C700B14695 /* 104n.png in Resources */,
+				8E0AD9E521227C0D003F1CF9 /* 雪.png in Resources */,
+				8EA9A1382122F8C700B14695 /* 500.png in Resources */,
+				8EA9A0FC2122F8C700B14695 /* 315.png in Resources */,
+				8E0AD9EB21227C0D003F1CF9 /* 小雨.png in Resources */,
+				8E30024421218382004C8941 /* Main.storyboard in Resources */,
+				8E0AD9E121227C0D003F1CF9 /* 云.png in Resources */,
+				8EA9A0FD2122F8C700B14695 /* 513.png in Resources */,
+				8EA9A1202122F8C700B14695 /* 305.png in Resources */,
+				8EA9A1082122F8C700B14695 /* 301.png in Resources */,
+				8E0AD9F121227C0D003F1CF9 /* 雾.png in Resources */,
+				8EA9A11B2122F8C700B14695 /* 300n.png in Resources */,
+				8E0AD9F521227C0D003F1CF9 /* 未知.png in Resources */,
+				8E0AD9EE21227C0D003F1CF9 /* 按钮.png in Resources */,
+				8EA9A1332122F8C700B14695 /* 501.png in Resources */,
+				8E0AD9DE21227C0D003F1CF9 /* 中雨.png in Resources */,
+				8EA9A1322122F8C700B14695 /* 512.png in Resources */,
+				8EA9A12D2122F8C700B14695 /* 499.png in Resources */,
+				8EA9A0F62122F8C700B14695 /* 314.png in Resources */,
+				8EA9A10B2122F8C700B14695 /* 508.png in Resources */,
+				8EA9A11E2122F8C700B14695 /* 404.png in Resources */,
+				8EA9A11C2122F8C700B14695 /* 503.png in Resources */,
+				8E30026F212184C7004C8941 /* f83b3a393f0399c61f6736dfb61c9e27.jpg in Resources */,
+				8EA9A10C2122F8C700B14695 /* 304.png in Resources */,
+				8E0AD9ED21227C0D003F1CF9 /* 雾霾.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E30024F2121838B004C8941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E30025A2121838B004C8941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E30023521218382004C8941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0AD9F82122B06B003F1CF9 /* DetailTableViewCell.m in Sources */,
+				8E3002722121A1A8004C8941 /* WeatherTableViewCell.m in Sources */,
+				8E30024121218382004C8941 /* ViewController.m in Sources */,
+				8E0AD9FB2122C7AF003F1CF9 /* ScrollerVIewTableViewCell.m in Sources */,
+				8E30024C2121838B004C8941 /* main.m in Sources */,
+				8E0AD9B521226E9D003F1CF9 /* NextTableViewCell.m in Sources */,
+				8E30023E21218382004C8941 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E30024D2121838B004C8941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3002562121838B004C8941 /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E3002582121838B004C8941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3002612121838B004C8941 /* ____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E3002532121838B004C8941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E30023821218382004C8941 /* 天气预报 */;
+			targetProxy = 8E3002522121838B004C8941 /* PBXContainerItemProxy */;
+		};
+		8E30025E2121838B004C8941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E30023821218382004C8941 /* 天气预报 */;
+			targetProxy = 8E30025D2121838B004C8941 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E30024221218382004C8941 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E30024321218382004C8941 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E3002472121838B004C8941 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E3002482121838B004C8941 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E3002632121838B004C8941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E3002642121838B004C8941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E3002662121838B004C8941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "天气预报/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SurfaceGentleman.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E3002672121838B004C8941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "天气预报/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SurfaceGentleman.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E3002692121838B004C8941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "天气预报Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SurfaceGentleman.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/天气预报.app/天气预报";
+			};
+			name = Debug;
+		};
+		8E30026A2121838B004C8941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "天气预报Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SurfaceGentleman.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/天气预报.app/天气预报";
+			};
+			name = Release;
+		};
+		8E30026C2121838B004C8941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "天气预报UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SurfaceGentleman.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "天气预报";
+			};
+			name = Debug;
+		};
+		8E30026D2121838B004C8941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "天气预报UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "SurfaceGentleman.----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "天气预报";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E30023421218382004C8941 /* Build configuration list for PBXProject "天气预报" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3002632121838B004C8941 /* Debug */,
+				8E3002642121838B004C8941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3002652121838B004C8941 /* Build configuration list for PBXNativeTarget "天气预报" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3002662121838B004C8941 /* Debug */,
+				8E3002672121838B004C8941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3002682121838B004C8941 /* Build configuration list for PBXNativeTarget "天气预报Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3002692121838B004C8941 /* Debug */,
+				8E30026A2121838B004C8941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E30026B2121838B004C8941 /* Build configuration list for PBXNativeTarget "天气预报UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E30026C2121838B004C8941 /* Debug */,
+				8E30026D2121838B004C8941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E30023121218382004C8941 /* Project object */;
+}
