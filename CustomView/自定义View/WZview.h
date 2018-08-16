@@ -34,6 +34,8 @@
 @property(nonatomic, strong)id ojbc;
 @property(nonatomic, strong)id ojbc2;
 
+@property(nonatomic, strong)id objcJSON;
+
 @property(nonatomic, copy)NSArray *detailLeftArray;
 @property(nonatomic, copy)NSArray *detailRightArray;
 @property(nonatomic, copy)NSArray *detailMessageLeftArray;
