@@ -36,7 +36,7 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     // 从中国天气预报网请求数据
-    NSString *urlStr = [NSString stringWithFormat:@"https://free-api.heweather.com/s6/weather/now?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", _searchBar.text];
+    NSString *urlStr = [NSString stringWithFormat:@"https://search.heweather.com/find?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", _searchBar.text];
     
     NSURL *url = [NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
