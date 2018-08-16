@@ -29,6 +29,7 @@
         [self.contentView addSubview:_leftMesssageLabel];
         [self.contentView addSubview:_rightMessageLabel];
     }
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     return self;
 }
 

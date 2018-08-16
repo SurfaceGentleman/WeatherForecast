@@ -34,9 +34,9 @@
         //_squareView.backgroundColor = [UIColor redColor];
         //[self addSubview:_squareView];
         
-        _backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3fe28f8bd934629a8f7f968727261aed.jpg"]];
+        //_backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3fe28f8bd934629a8f7f968727261aed.jpg"]];
         
-        [self addSubview:_backImageView];
+        //[self addSubview:_backImageView];
         
         _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStyleGrouped];
         _tableView.delegate = self;
@@ -202,6 +202,7 @@
         cell3.textLabel.textColor = [UIColor whiteColor];
         cell3.textLabel.font = [UIFont systemFontOfSize:18];
         cell3.backgroundColor = [UIColor clearColor];
+        cell3.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell3;
     }
     else {

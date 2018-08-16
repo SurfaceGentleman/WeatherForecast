@@ -25,6 +25,10 @@
 
 @property(nonatomic, assign)BOOL isHaveCity;
 
+@property(nonatomic, strong)NSMutableArray *cityMutableArray;
+
 @property(nonatomic, weak)NSObject <ReturnCityNameDelegate> *delegate;
+
+- (id)initWithCityMutableArray:(NSMutableArray *)cityMuArray;
 
 @end

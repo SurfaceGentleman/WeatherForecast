@@ -17,7 +17,9 @@
         _weatherScrollerView.showsHorizontalScrollIndicator = YES;
         
         [self.contentView addSubview:_weatherScrollerView];
+       
     }
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     return self;
 }
 

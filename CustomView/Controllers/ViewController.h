@@ -19,7 +19,15 @@
 
 @property(nonatomic, copy)NSMutableArray *cityMutableArray;
 
+@property(nonatomic, strong)UIScrollView *mainScreenScrollerView;
+
 - (id) initWithCityName:(NSString *)name;
+
+- (id)initWithCityMutableArray:(NSMutableArray *)cityMuArray;
+
+@property(nonatomic, strong)UIImageView *backImageView;
+
+@property(nonatomic, strong)UIPageControl *weatherPageControl;
 
 @end
 

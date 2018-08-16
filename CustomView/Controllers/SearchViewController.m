@@ -38,7 +38,7 @@
     // 从中国天气预报网请求数据
     NSString *urlStr = [NSString stringWithFormat:@"https://free-api.heweather.com/s6/weather/now?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", _searchBar.text];
     
-    NSURL *url = [ NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSURL *url = [NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     // 创建请求
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -68,7 +68,21 @@
                 }
                 else {
                     [self.delegate getCityName:self->_searchBar.text];
-                    ViewController *viewController = [[ViewController alloc] initWithCityName:self->_searchBar.text];
+                    
+                    for(NSString * cityStr in self->_cityMutableArray) {
+                        if (YES == [cityStr isEqualToString:self->_searchBar.text]) {
+                            self->_isHaveCity = YES;
+                            break;
+                        }
+                        else {
+                            self->_isHaveCity = NO;
+                        }
+                    }
+                    if (self->_isHaveCity == NO) {
+                        [self.cityMutableArray addObject:self->_searchBar.text];
+                    }
+                    
+                    ViewController *viewController = [[ViewController alloc] initWithCityMutableArray:self->_cityMutableArray];
                     [self presentViewController:viewController animated:YES completion:nil];
                 }
             });
@@ -87,8 +101,18 @@
 //        [alert addAction: defaultAction];
 //        [self presentViewController: alert animated: YES completion:nil];
 //    }
-    
+    //[self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+- (id)initWithCityMutableArray:(NSMutableArray *)cityMuArray
+{
+    if (self = [super init]) {
+        _cityMutableArray = [cityMuArray mutableCopy];
+    }
+    return self;
+}
+
 
 //点击return 按钮 去掉
 -(BOOL)textFieldShouldReturn:(UITextField *)textField

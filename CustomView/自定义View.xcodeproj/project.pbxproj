@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8E0C32432123C54600258B8C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C32422123C54600258B8C /* SearchViewController.m */; };
+		8E391FCC21250B2400336409 /* Abstract Colorful Vector Graphic Art.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E391FCB21250B2400336409 /* Abstract Colorful Vector Graphic Art.jpg */; };
+		8E391FE82125537A00336409 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E391FE52125537A00336409 /* 01.jpg */; };
+		8E391FE92125537A00336409 /* 02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E391FE62125537A00336409 /* 02.jpg */; };
+		8E391FEA2125537A00336409 /* 03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E391FE72125537A00336409 /* 03.jpg */; };
 		8EA9A1472122FFBD00B14695 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9A1462122FFBD00B14695 /* AppDelegate.m */; };
 		8EA9A14A2122FFBD00B14695 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9A1492122FFBD00B14695 /* ViewController.m */; };
 		8EA9A14D2122FFBD00B14695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA9A14B2122FFBD00B14695 /* Main.storyboard */; };
@@ -149,6 +153,10 @@
 /* Begin PBXFileReference section */
 		8E0C32412123C54600258B8C /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		8E0C32422123C54600258B8C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		8E391FCB21250B2400336409 /* Abstract Colorful Vector Graphic Art.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Abstract Colorful Vector Graphic Art.jpg"; sourceTree = "<group>"; };
+		8E391FE52125537A00336409 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		8E391FE62125537A00336409 /* 02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 02.jpg; sourceTree = "<group>"; };
+		8E391FE72125537A00336409 /* 03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 03.jpg; sourceTree = "<group>"; };
 		8EA9A1422122FFBC00B14695 /* 自定义View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA9A1452122FFBD00B14695 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EA9A1462122FFBD00B14695 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -394,7 +402,11 @@
 		8EA9A1892123063F00B14695 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8E391FCB21250B2400336409 /* Abstract Colorful Vector Graphic Art.jpg */,
 				8EA9A19C2123065800B14695 /* 3fe28f8bd934629a8f7f968727261aed.jpg */,
+				8E391FE52125537A00336409 /* 01.jpg */,
+				8E391FE62125537A00336409 /* 02.jpg */,
+				8E391FE72125537A00336409 /* 03.jpg */,
 				8EA9A1E92123065D00B14695 /* 100.png */,
 				8EA9A1C52123065B00B14695 /* 100n.png */,
 				8EA9A1D22123065C00B14695 /* 101.png */,
@@ -651,6 +663,7 @@
 				8EA9A14F2122FFCF00B14695 /* Assets.xcassets in Resources */,
 				8EA9A2132123065E00B14695 /* 301.png in Resources */,
 				8EA9A24D2123065E00B14695 /* 200.png in Resources */,
+				8E391FE82125537A00336409 /* 01.jpg in Resources */,
 				8EA9A1FA2123065E00B14695 /* 409.png in Resources */,
 				8EA9A2182123065E00B14695 /* 500.png in Resources */,
 				8EA9A20B2123065E00B14695 /* 211.png in Resources */,
@@ -682,6 +695,7 @@
 				8EA9A20F2123065E00B14695 /* 311.png in Resources */,
 				8EA9A23A2123065E00B14695 /* 210.png in Resources */,
 				8EA9A2452123065E00B14695 /* 307.png in Resources */,
+				8E391FEA2125537A00336409 /* 03.jpg in Resources */,
 				8EA9A2432123065E00B14695 /* 风.png in Resources */,
 				8EA9A2172123065E00B14695 /* 410.png in Resources */,
 				8EA9A2342123065E00B14695 /* 阴.png in Resources */,
@@ -692,6 +706,8 @@
 				8EA9A2572123065E00B14695 /* 202.png in Resources */,
 				8EA9A20D2123065E00B14695 /* 406n.png in Resources */,
 				8EA9A2142123065E00B14695 /* 513.png in Resources */,
+				8E391FCC21250B2400336409 /* Abstract Colorful Vector Graphic Art.jpg in Resources */,
+				8E391FE92125537A00336409 /* 02.jpg in Resources */,
 				8EA9A2442123065E00B14695 /* 203.png in Resources */,
 				8EA9A1F62123065E00B14695 /* 中雨.png in Resources */,
 				8EA9A22A2123065E00B14695 /* 204.png in Resources */,

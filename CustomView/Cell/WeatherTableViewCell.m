@@ -20,7 +20,7 @@
     if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         _temperatureLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.viewForLastBaselineLayout.frame.size.width / 2 - 0, 100, 160, 80)];
         _placeLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.viewForLastBaselineLayout.frame.size.width / 2 + 20, 10, 160, 80)];
-        _weatherLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.viewForLastBaselineLayout.frame.size.width / 2 + 40, 45, 160, 80)];
+        _weatherLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.viewForLastBaselineLayout.frame.size.width / 2 + 30, 45, 160, 80)];
         _weekLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.viewForLastBaselineLayout.frame.size.width / 2 - 20, 30, 80, 30)];
         _dayLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 180, 160, 20)];
         _highTemperatureLabel = [[UILabel alloc] initWithFrame:CGRectMake(320, 177, 80, 20)];
@@ -33,6 +33,7 @@
         [self.contentView addSubview:_weatherLabel];
         [self.contentView addSubview:_lowTemperatureLabel];
         [self.contentView addSubview:_temperatureLabel];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return self;
 }

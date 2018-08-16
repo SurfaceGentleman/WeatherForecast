@@ -42,6 +42,7 @@
         [self.contentView addSubview:_weatherImage2];
         
     }
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     return self;
 }
 
