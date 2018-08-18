@@ -19,9 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.57 green:0.76 blue:0.94 alpha:1.00];
     
     _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 40)];
+    _searchBar.searchBarStyle = UISearchBarStyleMinimal;
     _searchBar.delegate = self;
     [self.view addSubview:_searchBar];
     

@@ -46,19 +46,14 @@
     _mainScreenScrollerView.delegate = self;
     
     for (int i = 0; i < [_cityMutableArray count]; i++) {
-        int j = i + 1;
-        if (i + 1 > 3) {
-            j %= 3;
-        }
-        NSString *imageStr = [NSString stringWithFormat:@"0%d.jpg", j];
+//        NSString *imageStr = [NSString stringWithFormat:@"0%d.jpg", j];
         
-        _backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageStr]];
+        _backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"timg-3.jpg"]];
         _backImageView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * i, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
         [_mainScreenScrollerView addSubview:_backImageView];
         
         WZview *wzview = [[WZview alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width * i, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) AndName:_cityMutableArray[i]];
         [_mainScreenScrollerView addSubview:wzview];
-        
         
     }
     
@@ -77,8 +72,8 @@
     
     
     _buttomView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 40, self.view.frame.size.width, 40)];
-    _buttomView.backgroundColor = [UIColor blackColor];
-    _buttomView.alpha = 0.5;
+    _buttomView.backgroundColor = [UIColor colorWithRed:0.57 green:0.76 blue:0.94 alpha:0.5];
+    //_buttomView.alpha = 0.5;
     [self.view addSubview:_buttomView];
     
     _buttomButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -93,8 +88,8 @@
     _weatherPageControl.frame = CGRectMake(60, 5, 280, 30);
     _weatherPageControl.numberOfPages = [_cityMutableArray count];
     _weatherPageControl.currentPage = [_cityMutableArray count];
-    _weatherPageControl.pageIndicatorTintColor = [UIColor whiteColor];
-    _weatherPageControl.currentPageIndicatorTintColor = [UIColor orangeColor];
+//    _weatherPageControl.pageIndicatorTintColor = [UIColor whiteColor];
+//    _weatherPageControl.currentPageIndicatorTintColor = [UIColor orangeColor];
     [_weatherPageControl addTarget:self action:@selector(changeScrollerVIew) forControlEvents:UIControlEventValueChanged];
     [_buttomView addSubview:_weatherPageControl];
     
