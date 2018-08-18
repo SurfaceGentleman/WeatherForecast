@@ -10,7 +10,6 @@
 #import "WeatherTableViewCell.h"
 #import "NextTableViewCell.h"
 #import "DetailTableViewCell.h"
-#import "ScrollerVIewTableViewCell.h"
 #import "SearchViewController.h"
 
 
@@ -47,7 +46,14 @@
 
 @property(nonatomic, copy)NSString *cityName;
 
+@property(nonatomic, strong)UIScrollView * weatherScrollerView;
 
 - (instancetype)initWithFrame:(CGRect)frame AndName:(NSString *)name;
+
+@property(nonatomic, strong)UILabel *timeLabel;
+@property(nonatomic, strong)UILabel *temperatureLl;
+@property(nonatomic, strong)UIImageView *weatherImageView;
+
+@property(nonatomic, strong)NSMutableArray *timeMutableArray;
 
 @end

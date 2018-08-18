@@ -19,6 +19,7 @@
 */
 
 
+
 - (instancetype)initWithFrame:(CGRect)frame AndName:(NSString *)name
 {
     _cityName = name;
@@ -28,6 +29,9 @@
     }
     
     NSLog(@"VIew:%@", _cityName);
+    
+    
+    
     
     if (self = [super initWithFrame:frame]) {
         //_squareView = [UIView new];
@@ -45,19 +49,47 @@
         //[_tableView registerClass:[WeatherTableViewCell class] forCellReuseIdentifier:@"ID"];
         
         
+        _weatherScrollerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 120)];
+        _weatherScrollerView.showsHorizontalScrollIndicator = YES;
+        _weatherScrollerView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width * 3, 120) ;
+        for (int i = 0; i < 24; i++) {
+//            _timeLabel = [[UILabel alloc] initWithFrame:CGRectMake((1/8.0 *i* [UIScreen mainScreen].bounds.size.width +8), 4, [UIScreen mainScreen].bounds.size.width * 1/8, 20)];
+//            //NSLog(@"%@", _timeArray[i]);
+//
+////           dispatch_sync(dispatch_get_main_queue(), ^{
+//                _timeLabel.text = _ojbc[@"hourly"][i][@"time"];
+////            });
+//
+//
+//            _timeLabel.textColor = [UIColor whiteColor];
+//            [_weatherScrollerView addSubview:_timeLabel];
+//
+//            _temperatureLl = [[UILabel alloc] initWithFrame:CGRectMake((1/8.0 *i* [UIScreen mainScreen].bounds.size.width +8), 90, [UIScreen mainScreen].bounds.size.width * 1/8, 20)];
+//
+//            _temperatureLl.text = _ojbc[@"hourly"][i][@"time"];
+//            [_weatherScrollerView addSubview:_temperatureLl];
+//
+//            _temperatureLl.textColor = [UIColor whiteColor];
+//
+//
+//            _weatherImageView = [[UIImageView alloc] initWithFrame:CGRectMake((1/8.0 *i* [UIScreen mainScreen].bounds.size.width ), 35, [UIScreen mainScreen].bounds.size.width * 1/8, 45)];
+//            _weatherImageView.image = [UIImage imageNamed:@"100"];
+//            [_weatherScrollerView addSubview:_weatherImageView];
+        }
+        
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             // 处理耗时操作的代码块...
             
             //通知主线程刷新
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                NSString *urlStr = [NSString stringWithFormat:@"https://free-api.heweather.com/s6/weather?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", self->_cityName];
+                NSString *urlAllStr = [NSString stringWithFormat:@"https://free-api.heweather.com/s6/weather?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", self->_cityName];
                 
-                NSURL *url = [NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+                NSURL *allArl = [NSURL URLWithString:[urlAllStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
                 //创建请求
-                NSURLRequest *request = [NSURLRequest requestWithURL:url];
+                NSURLRequest *allRequest = [NSURLRequest requestWithURL:allArl];
                 
-                NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                NSURLSessionDataTask *dataTaskMain = [[NSURLSession sharedSession] dataTaskWithRequest:allRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                     // 最简单的错误处理机制:
                     if (data && !error) {
                         
@@ -74,59 +106,58 @@
                     
                     NSLog(@"%@", self->_objcJSON[@"HeWeather6"][0][@"now"][@"fl"]);
                 }];
+                [dataTaskMain resume];
+                
+                NSString *urlStr = [NSString stringWithFormat:@"http://api.jisuapi.com/weather/query?appkey=42a1b7d9c0d97c88&city=安顺"];
+                NSURL *url = [NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+                NSURLRequest *request = [NSURLRequest requestWithURL:url];
+                NSURLSessionDataTask * dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                    
+                    // 在网络完成的 Block 回调中,要增加错误机制.
+                    // 失败机制处理: 错误的状态码!
+                    
+                    // 最简单的错误处理机制:
+                    if (data && !error) {
+                        
+                        // JSON格式转换成字典，IOS5中自带解析类NSJSONSerialization从response中解析出数据放到字典中
+                        dispatch_sync(dispatch_get_main_queue(), ^{
+                            self->_ojbc = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+                            self->_timeMutableArray = [NSMutableArray new];
+                            for (int i = 0; i < 24; i++) {
+                                self->_timeLabel = [[UILabel alloc] initWithFrame:CGRectMake((1/8.0 *i* [UIScreen mainScreen].bounds.size.width +8), 4, [UIScreen mainScreen].bounds.size.width * 1/8, 20)];
+                                //NSLog(@"%@", _timeArray[i]);
+                                
+                                //           dispatch_sync(dispatch_get_main_queue(), ^{
+                                self->_timeLabel.text = self->_ojbc[@"result"][@"hourly"][i][@"time"];
+                                //            });
+                                
+                                
+                                self->_timeLabel.textColor = [UIColor whiteColor];
+                                [self->_weatherScrollerView addSubview:self->_timeLabel];
+                                
+                                self->_temperatureLl = [[UILabel alloc] initWithFrame:CGRectMake((1/8.0 *i* [UIScreen mainScreen].bounds.size.width +17), 90, [UIScreen mainScreen].bounds.size.width * 1/8, 20)];
+                                
+                                self->_temperatureLl.text = self->_ojbc[@"result"][@"hourly"][i][@"temp"];
+                                [self->_weatherScrollerView addSubview:self->_temperatureLl];
+                                
+                                self->_temperatureLl.textColor = [UIColor whiteColor];
+                                
+                                
+                                self->_weatherImageView = [[UIImageView alloc] initWithFrame:CGRectMake((1/8.0 *i* [UIScreen mainScreen].bounds.size.width + 15), 40, 30, 30)];
+                                self->_weatherImageView.image = [UIImage imageNamed:self->_ojbc[@"result"][@"hourly"][i][@"img"]];
+                                [self->_weatherScrollerView addSubview:self->_weatherImageView];
+                            }
+                            NSLog(@"%@", self->_ojbc);
+                        });
+                        
+                        //NSLog(@"%@", obj[@"HeWeather6"][0][@"status"]);
+                        
+                        //NSLog(@"%@---%@", dict, dict[@"njd"]);
+                    }
+                    
+                }];
                 [dataTask resume];
-                
-                
-//                NSString *urlStr1 = [NSString stringWithFormat:@"https://free-api.heweather.com/s6/weather/now?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", self->_cityName];
-//
-//                NSString *urlStr2 = [NSString stringWithFormat:@"https://free-api.heweather.com/s6/weather/forecast?location=%@&key=4c4d76a4cec84fd5a743c46746cd3ca9", self->_cityName];
-//
-//                NSURL *url1 = [ NSURL URLWithString:[urlStr1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-//
-//                NSURL *url2 = [ NSURL URLWithString:[urlStr2 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-//
-//                //创建请求
-//                NSURLRequest *todayRequest = [NSURLRequest requestWithURL:url1];
-//                NSURLRequest *tomorrowRequest = [NSURLRequest requestWithURL:url2];
-//
-//                NSURLSessionDataTask *dataTask1 = [[NSURLSession sharedSession] dataTaskWithRequest:todayRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//                    // 最简单的错误处理机制:
-//                    if (data && !error) {
-//
-//                        // JSON格式转换成字典，IOS5中自带解析类NSJSONSerialization从response中解析出数据放到字典中
-//                        self->_ojbc = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-//                        //[self.tableView reloadData];
-//                        dispatch_sync(dispatch_get_main_queue(), ^{
-//                            [self.tableView reloadData];
-//                        });
-//
-//                    }
-//
-//
-//                    NSLog(@"%@", self->_ojbc[@"HeWeather6"][0][@"now"][@"fl"]);
-//                }];
-//                [dataTask1 resume];
-//
-//                NSURLSessionDataTask *dataTask2 = [[NSURLSession sharedSession] dataTaskWithRequest:tomorrowRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//                    // 最简单的错误处理机制:
-//                    if (data && !error) {
-//
-//                        // JSON格式转换成字典，IOS5中自带解析类NSJSONSerialization从response中解析出数据放到字典中
-//                        self->_ojbc2 = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-//
-////                        NSLog(@"%@", self->_ojbc2[@"HeWeather6"][0][@"daily_forecast"][0][@"tmp_min"]);
-////                        NSLog(@"%@", self->_ojbc2[@"HeWeather6"][0][@"daily_forecast"][0][@"sr"]);
-//
-//                        dispatch_sync(dispatch_get_main_queue(), ^{
-//                            [self creatDetailLabelTextAndMessageText];
-//                            [self->_tableView reloadData];
-//                        });
-//                    }
-//
-//
-//
-//                }];
-//                [dataTask2 resume];
+
             });
             
         });
@@ -187,17 +218,20 @@
         cell.temperatureLabel.text = self->_objcJSON[@"HeWeather6"][0][@"now"][@"tmp"];
         cell.weatherLabel.text = self->_objcJSON[@"HeWeather6"][0][@"now"][@"cond_txt"];
         cell.placeLabel.text = self->_objcJSON[@"HeWeather6"][0][@"basic"][@"location"];
-        cell.dayLabel.text = self->_objcJSON[@"HeWeather6"][0][@"update"][@"loc"];
+        cell.dayLabel.text = self->_ojbc[@"result"][@"daily"][0][@"date"];
         cell.highTemperatureLabel.text = _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"tmp_max"];
         cell.lowTemperatureLabel.text = _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"tmp_min"];
         cell.backgroundColor = [UIColor clearColor];
         return cell;
     }
     else if (indexPath.section == 1) {
-        ScrollerVIewTableViewCell * cell1 = [tableView dequeueReusableCellWithIdentifier:@"ID1"];
+//        ScrollerVIewTableViewCell * cell1 = [tableView dequeueReusableCellWithIdentifier:@"ID1"];
+        UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"ID1"];
         if (cell1 == nil) {
-            cell1 = [[ScrollerVIewTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"ID1"];
+            cell1 = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"ID1"];
+            //NSLog(@"_ojbc = %@", _ojbc);
         }
+        [cell1.contentView addSubview:_weatherScrollerView];
         cell1.backgroundColor = [UIColor clearColor];
         return cell1;
     }
@@ -206,11 +240,11 @@
         if (cell2 == nil) {
             cell2 = [[NextTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"ID2"];
         }
-        cell2.timeLabel.text = @"明天";
+        cell2.timeLabel.text = self->_ojbc[@"result"][@"daily"][1][@"week"];
         cell2.highTemperatureLabel.text = _objcJSON[@"HeWeather6"][0][@"daily_forecast"][1][@"tmp_max"];
         cell2.lowTemperatureLabel.text = _objcJSON[@"HeWeather6"][0][@"daily_forecast"][1][@"tmp_min"];
-        cell2.weatherImage.image = [UIImage imageNamed:_ojbc2[@"HeWeather6"][0][@"daily_forecast"][1][@"cond_code_d"]];
-        cell2.timeLabel2.text = @"后天";
+        cell2.weatherImage.image = [UIImage imageNamed:_objcJSON[@"HeWeather6"][0][@"daily_forecast"][1][@"cond_code_d"]];
+        cell2.timeLabel2.text = self->_ojbc[@"result"][@"daily"][2][@"week"];
         cell2.highTemperatureLabel2.text = _objcJSON[@"HeWeather6"][0][@"daily_forecast"][2][@"tmp_max"];
         cell2.lowTemperatureLabel2.text = _objcJSON[@"HeWeather6"][0][@"daily_forecast"][2][@"tmp_min"];
         cell2.weatherImage2.image = [UIImage imageNamed:_objcJSON[@"HeWeather6"][0][@"daily_forecast"][2][@"cond_code_d"]];
@@ -285,8 +319,6 @@
     
     if (_objcJSON[@"HeWeather6"][0][@"daily_forecast"][0]) {
         _detailMessageLeftArray = @[@" ", @" ", @" ", @" ", _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"sr"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"pop"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"wind_spd"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"pcpn"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"vis"], @" "];
-//        NSLog(@"====ojbc2%@",_ojbc2);
-//        NSLog(@"----ojbc%@",_ojbc);
         _detailMessageRightArray = @[@" ", @" ", @" ", @" ", _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"ss"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"hum"], _objcJSON[@"HeWeather6"][0][@"now"][@"fl"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"pres"], _objcJSON[@"HeWeather6"][0][@"daily_forecast"][0][@"uv_index"], @" "];
     }
     else {
